@@ -1,0 +1,141 @@
+<input type="text" #u1>
+<br>
+<input type="password" #u2>
+<br>
+<button (click)="check(u1.value,u2.value)">Login</button>
+<p>Hi{{clickFun()}}</p>
+<button class="btn btn-primary" (click)="routing()">routing</button>
+<!-- <p>Hi</p> -->
+<!-- <form action="/action_page.php">
+    <div class="imgcontainer">
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+  
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+          
+      <button type="submit">Login Wiht google</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn" (click)="check()">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form> -->
+
+
+  <!-- <div>
+    <div>
+      <h2>Contry name search Using Promise</h2>
+      <input #term type="text" (keyup)="serach(term.value)">
+    </div>
+    <div *ngIf="results.length > 0">
+      <li *ngFor = "let result of results">
+          {{result.name}}
+      </li>
+
+    </div>
+  </div>
+
+
+  <div>
+      <h2>Country serach using Observable</h2>
+      <input [formControl] = "term">
+      
+      <div *ngIf = "results.length > 0">
+        <li *ngFor = "let result of results">
+            {{result.name}}
+        </li>
+
+      </div> 
+      
+</div> -->
+
+<!-- Use TrackBy -->
+<!-- <div>
+  <h2>Track By</h2>
+  <table border="1">
+    <tr *ngFor="let s of Student;let i=index; trackBy:trackByStudentId ">
+      <td>{{i}}</td>
+      <td>{{s.StudentID}}</td>
+      <td>{{s.StudentName}}</td>
+    </tr>
+  </table>
+</div>
+<button (click)="GetNewStudent()">get New Student</button> -->
+
+ <!-- ngStyle -->
+
+ <!-- <ul *ngFor = "let s of Student">
+   <li [ngStyle]="{color:getCountryColor(s.Country)}">{{s.StudentName}}</li>
+ </ul> -->
+
+ 
+ <!-- <div>
+  FullDate : {{DOB | date :"fullDate | uppercase"}}
+ </div> -->
+ <!-- Template Driven Form -->
+ <!-- <div class="container">
+   <div class="row">
+      <div class="form-ng">
+        <form #regForm='ngForm' (ngSubmit)="Register(regForm)">
+      
+          <div class="form-group">
+              <input type="text"  class="form-control" placeholder="First Name" name="firstname"
+                      ngModel #firstName="ngModel" pattern="[a-zA-Z ]*"   required>
+              <span class="help-bpx" *ngIf="firstName.touched && !firstName.valid">Please enter valid name</span>
+          </div>
+          
+          <div class="form-group" >
+              <input type="text" class="form-control" placeholder="last Name" name="lastname" required ngModel>
+          </div>
+          
+          <div class="form-group">
+              <input type="text" class="form-control" placeholder="Email" email name="email" 
+                      ngModel #email="ngModel"  pattern="[a-zA-Z ]*" required >
+              <span class="help-bpx" *ngIf="email.touched && !email.valid">Please enter valid emial id</span>
+          </div>
+          <div class="align-center">
+              <button type="submit" class="btn btn-primary" id="Register" [disabled]="!regForm.valid" >Register</button>
+          </div>
+       
+        </form>
+      </div>
+   </div>
+ </div> -->
+
+ <!-- Reactive Form -->
+<!-- <div class="container">
+  <div class="row">
+    <div class="from_bg">
+      <form [formGroup]="signupForm" (ngSubmit)="PostData(signupForm)">
+          <div class="from-group">
+            <input type="text" formControlName='fname' placeholder="Your first name">
+            <span *ngFor="signupForm.control['fname'].haserror(required)">
+              Please enter proper name</span>
+          </div>
+          <div class="from-group">
+              <input type="text" formControlName='lname' placeholder="Your last name">
+          </div>
+          <div class="form-group">
+              <input type="text" formControlName="emailid" placeholder="Your email id">
+          </div>
+          <div>
+            <input type="submit" value="Post Data" [disabled]= "!signupForm.valid">
+          </div>
+
+      </form>
+    </div>
+
+  </div>
+
+</div> -->
+
+
